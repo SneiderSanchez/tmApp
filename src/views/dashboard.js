@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import LottieView from 'lottie-react-native';
 
-export default function App() {
+export default function Dashboard() {
   return (
     <SafeAreaView style={styles.container}>
       <Text style={styles.title}>Bienvenido a tm App</Text>
@@ -22,7 +22,7 @@ export default function App() {
           )
         }>
         <LottieView
-          source={require('../public/static/animations/alert.json')}
+          source={require('../../public/static/animations/alert.json')}
           autoPlay
           loop
           speed={0.9}
@@ -42,7 +42,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#121212',
   },
   title: {
     color: '#ffffff',
